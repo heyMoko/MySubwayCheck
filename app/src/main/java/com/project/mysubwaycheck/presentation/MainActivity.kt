@@ -1,7 +1,8 @@
-package com.project.mysubwaycheck
+package com.project.mysubwaycheck.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.project.mysubwaycheck.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
