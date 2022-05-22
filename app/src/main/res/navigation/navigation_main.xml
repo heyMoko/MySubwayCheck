@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/stations_dest"
-        android:name=""
+        android:name="com.project.mysubwaycheck.presentation.stations.StationsFragment"
         tools:layout="@layout/fragment_stations">
 
         <action
@@ -18,12 +18,12 @@
 
     <fragment
         android:id="@+id/station_arrivals_dest"
-        android:name=""
+        android:name="com.project.mysubwaycheck.presentation.stationarrivals.StationArrivalsFragment"
         tools:layout="@layout/fragment_station_arrivals">
 
         <argument
             android:name="station"
-            app:argType="" />
+            app:argType="com.project.mysubwaycheck.domain.Station" />
 
     </fragment>
 

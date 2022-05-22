@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "549840184496",
+    "project_id": "mysubwaycheck",
+    "storage_bucket": "mysubwaycheck.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549840184496:android:ae2460b71b47264f59c775",
+        "android_client_info": {
+          "package_name": "com.project.mysubwaycheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549840184496-42glp1cbldbupfk3bk0n2ni3116t8l0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyXvwIb4eqi0_2x5PWrKqXmEf5s5_5oO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549840184496-42glp1cbldbupfk3bk0n2ni3116t8l0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
