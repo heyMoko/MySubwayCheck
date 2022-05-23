@@ -1,6 +1,7 @@
 package com.project.mysubwaycheck.data.db
 
 import androidx.room.*
+import androidx.room.Transaction
 import com.project.mysubwaycheck.data.db.entity.StationEntity
 import com.project.mysubwaycheck.data.db.entity.StationSubwayCrossRefEntity
 import com.project.mysubwaycheck.data.db.entity.StationWithSubwaysEntity
@@ -22,21 +23,4 @@ interface StationDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCrossReferences(reference: List<StationSubwayCrossRefEntity>)
-
-    @Transaction
-    suspend fun insertStationSubways(stationSubways: List<Pair<StationEntity, SubwayEntity>>) {
-        insertStations(stationSubways.map { it.first })
-        insertSubways(stationSubways.map { it.second })
-        insertCrossReferences(
-            stationSubways.map { (station, subway) ->
-                StationSubwayCrossRefEntity(
-                    station.stationName,
-                    subway.subwayId
-                )
-            }
-        )
-    }
-
-    @Update
-    suspend fun updateStation(station: StationEntity)
 }
